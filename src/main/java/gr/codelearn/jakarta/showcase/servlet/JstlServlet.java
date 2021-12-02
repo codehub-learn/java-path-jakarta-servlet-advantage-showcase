@@ -9,7 +9,7 @@ import java.io.IOException;
 public class JstlServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setAttribute("value","The value");
+        request.setAttribute("attribute_value","The value");
         request.getRequestDispatcher("/jstl.jsp").forward(request,response);
     }
 
